@@ -78,14 +78,14 @@ $(function () {
             } catch (e) {
                 console.log(e)
             }
-            let findIndex = resAllArray.indexOf(carInfo);                              // 返回找到的下标
-            let overTime = carInfo[1] + DISCONNECTTIME;                                 // 超时的时间节点
-            let temp = true                                                             // 返回结果   默认值为断开
+            let findIndex = resAllArray.indexOf(carInfo);                             
+            let overTime = carInfo[1] + DISCONNECTTIME;                                 
+            let temp = true                                                            
 
-            if (findIndex === (resAllArray.length - 1)) {                              // 如果传的是最后一个数字  视为连接 交由下次处理    主要是怕不能进入for里面
+            if (findIndex === (resAllArray.length - 1)) {                            
                 temp = false
             }
-            for (let i = findIndex + 1; i < (resAllArray.length) && (resAllArray[i][1] < overTime); i++) {              // 将循环控制在超时时间内
+            for (let i = findIndex + 1; i < (resAllArray.length) && (resAllArray[i][1] < overTime); i++) {           
                 if (resAllArray[i][0] === carInfo[0]) {
                     temp = false
                     break
