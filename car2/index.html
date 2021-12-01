@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小车</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+            crossorigin="anonymous"></script>
+
+    <script src="indexJs.js"></script>
+
+</head>
+<body>
+
+
+<div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4" style="border: solid">
+
+
+        <div class="row" style="margin-top: 40px">
+            <p class="text-center" style="font-size: 30px">小车管理</p>
+
+        </div>
+
+        <hr style="border-top:1px solid black">
+
+
+        <div class="row" style="margin-top: 20px">
+            <div class="col-sm-3">
+                <button class="btn btn-default" type="submit" id="startBtn">出发</button>
+            </div>
+            <div class="col-sm-6">
+                <input type="text" id="timetext" value="00秒000毫秒" readonly><br>
+            </div>
+            <div class="col-sm-3">
+                <button class="btn btn-default" type="submit" id="stopBtn">到达</button>
+            </div>
+        </div>
+
+        <hr style="border-top:1px solid black">
+
+
+        <div class="row" style="margin-top: 20px">
+            <div class="col-sm-10">
+                <div class="row" style="margin-left: auto ">
+                    <span>全局参数设定:</span>
+                </div>
+                <div class="row" style="margin-left: auto ">
+
+                    <div class="col-sm-5" style="margin-top: 10px">判定持续连接时间:</div>
+                    <div class="col-sm-2">
+                        <input  id="connectingTime" value="5"/>
+                    </div>
+
+                </div>
+                <div class="row" style="margin-left: auto ;margin-top: 10px">
+                    <div class="col-sm-5" style="margin-top: 10px">判定断连超时时间:</div>
+                    <div class="col-sm-2">
+                        <input id="disconnectionTime" value="2"/>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <hr style="border-top:1px solid black">
+
+        <!--   小车    -->
+        <div class="row" style="margin-top: 10px ">
+            <div class="row">
+                <p class="text-center">点击模拟扫描到小车</p>
+            </div>
+
+            <div class="row" style="margin-top: 5px">
+                <div class="col-sm-3">
+                    <button class="btn btn-default center-block" type="submit" id="car1">小车1</button>
+                </div>
+                <div class="col-sm-3">
+                    <button class="btn btn-default center-block" type="submit" id="car2">小车2</button>
+                </div>
+                <div class="col-sm-3">
+                    <button class="btn btn-default center-block" type="submit" id="car3">小车3</button>
+                </div>
+                <div class="col-sm-3">
+                    <button class="btn btn-default center-block" type="submit" id="car4">小车4</button>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 10px; ">
+                <div class="col-sm-3">
+                    <button class="btn btn-default center-block" type="submit" id="car5">小车5</button>
+                </div>
+                <div class="col-sm-3">
+                    <button class="btn btn-default center-block" type="submit" id="car6">小车6</button>
+                </div>
+                <div class="col-sm-3">
+                    <button class="btn btn-default center-block" type="submit" id="car7">小车7</button>
+                </div>
+                <div class="col-sm-3">
+                    <button class="btn btn-default center-block" type="submit" id="car8">小车8</button>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 10px">
+                <div class="col-sm-3">
+                    <button class="btn btn-default center-block" type="submit" id="car9">小车9</button>
+                </div>
+                <div class="col-sm-3">
+                    <button class="btn btn-default center-block" type="submit" id="car10">小车10</button>
+                </div>
+                <div class="col-sm-3">
+                    <button class="btn btn-default center-block" type="submit" id="car11">小车11</button>
+                </div>
+                <div class="col-sm-3">
+                    <button class="btn btn-default center-block" type="submit" id="car12">小车12</button>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!--   文本     -->
+        <div class="row" style="margin-top: 10px; ">
+            <textarea class="form-control" rows="10" readonly placeholder="结果反馈" id="textarea"></textarea>
+        </div>
+
+
+    </div>
+    <div class="col-sm-4"></div>
+
+</div>
+
+
+</body>
+</html>
+</html>
